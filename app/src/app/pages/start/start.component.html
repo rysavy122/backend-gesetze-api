@@ -1,0 +1,33 @@
+<div id="test-body">
+  <h1># Suggest feature (CK EDITOR5)</h1>
+  <div style="display: flex; justify-content: center;margin-top: 50px;">
+    <form [formGroup]="formGroup">
+      <mat-form-field>
+        <mat-label style="font-size: 1.5rem;">
+          Gesetze
+        </mat-label>
+        <input placeholder="Wähle ein Gesetz zum bearbeiten ..." formControlName="gesetze" matInput type="text" [matAutocomplete]="auto" (input)="resetFilter($event)" />
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let item of filteredOptions" [value]="item">
+            {{item}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+  <div style="margin: auto;"
+       class="button"
+       (click)="toggleEditor()"
+       [class.editing]="isEditing">
+      {{isEditing ? 'SAVE' : 'EDIT'}}
+  </div>  
+  <br/>
+  <ckeditor *ngIf="isEditing"
+            (change)="editorChange($event)"
+            [editor]="Editor"
+            [data]="selectedItem"></ckeditor>
+  <div *ngIf="!isEditing"
+       [innerHTML]="selectedItem"></div>
+
+      </div>
+

@@ -1,0 +1,85 @@
+
+
+Und ne konkrete Aufgabe (das ist denn sogar mit die schwierigste ;) ist z.B.
+Ein "Suggestion"-Feature (ähnlich wie bei denen "Mentions" nenn die das)...
+Ich gebe ein "@BGH" oder "@13.01" es gibt ne Api-Anfrage und ich krieg folgendes JSON zurück...
+
+
+
+[
+   {
+      "id":2068550,
+      "title":"BGH, 24.11.2021 - VII ZR 531/21"
+   },
+   {
+      "id":2068940,
+      "title":"BGH, 13.01.2022 - III ZR 210/20"
+   },
+   {
+      "id":1828824,
+      "title":"BGH, 20.11.2002 - VIII ZR 146/01 - Allianz 5 -"
+   },
+   {
+      "id":2069668,
+      "title":"OLG Düsseldorf, 27.01.2022 - I-20 U 105/21"
+   },
+   {
+      "id":2069499,
+      "title":"OLG München, 16.12.2021 - 23 U 1704/20"
+   },
+   {
+      "id":2068212,
+      "title":"OLG Frankfurt/Main, 08.12.2021 - 4 U 251/20 - Medizinprodukte -"
+   },
+   {
+      "id":1823691,
+      "title":"BGH, 17.11.1983 - I ZR 139/81 - Allianz 2 -"
+   },
+   {
+      "id":2056223,
+      "title":"BGH, 05.11.2020 - VII ZR 188/19"
+   },
+   {
+      "id":1827369,
+      "title":"EuGH, 07.09.2006 - C-125/05 - Vulcan Silkeborg -"
+   },
+   {
+      "id":1828279,
+      "title":"EuGH, 17.01.2008 - C-19/07 - Groupe Danone -"
+   },
+   {
+      "id":1900517,
+      "title":"EuGH, 21.06.2007 - C-453/05 - DVAG 19 -"
+   },
+   {
+      "id":1850146,
+      "title":"EuGH, 16.03.2006 - C-3/04 - Poseidon Chartering -"
+   },
+   {
+      "id":1810198,
+      "title":"EuGH, 23.03.2006 - C-465/04 - Honyvem Informazioni Commerciali -"
+   }
+]
+
+
+
+Daraus schlägt er mir die title vor... wenn ich eins klick wird ein interner Link gesetzt in der Art "/dokument/id".
+Das muss in beide Richtungen funktionieren... an sich ist da nur HTML, der Editor klickt auf bearbeiten, CKEDITOR wird geöffnet, ich mach meinen Stuff und klick auf Speichern, CKEDITOR zu, wieder nur HTML.
+
+
+
+Hoff das war verständlich :D
+
+
+
+Morgen bin ich auch wieder im Büro und könnte Chefchen sagen, dass ich da potenziell jemand hätte... aber eilt ja auch alles nicht, also alles erstmla ganz entspannt
+
+
+
+Das Json ist natürlich nur beispielhaft wenn ich @BGH suche wird er mitr nicht die EUgh dinger vorschlagen etc... ;)
+
+
+
+
+Wenn du willst habe ich auch noch eine alte Test und rumspiel Umgebung. 
+Hast du NestJS als Backend, angular als Frontend und nen extra Ordner nur für den editor, den du dann immer wieder builden musst aber denn gleich verwendet wird in Angular

@@ -1,0 +1,44 @@
+.button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(12, 221, 12);
+    width:50px;
+    height:25px;
+    border:5px solid black;
+    border-radius: 5px;
+    &.editing {
+        background-color: rgb(0, 187, 255);
+        padding-right:15px;
+
+    }
+}
+
+button{
+    margin:50px;
+    margin-left:-50px;
+    
+}
+
+input{
+    margin:10px;
+    font-size: 1.4rem;
+}
+#test-body{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 10;
+
+}
+
+.mat-form-field{
+    width:90vw;
+}
+
+@media (min-width: 600px) {
+    .mat-form-field {
+      width: 70vw;
+    }
+  }
+  
+  
